@@ -4,10 +4,10 @@ trigger:
     scriptFolder: '$(System.DefaultWorkingDirectory)\*'
     resultsFile: '$(System.DefaultWorkingDirectory)\Test-Pester.XML'
     usePSCore: False
-  branches:
+    branches:
     include:
       - master
-  paths:
+    paths:
     include:
       - server.json
       - server.parameters.json
