@@ -1,6 +1,6 @@
 trigger:
   - task: Pester@10
-  inputs:
+    inputs:
     scriptFolder: '$(System.DefaultWorkingDirectory)\*'
     resultsFile: '$(System.DefaultWorkingDirectory)\Test-Pester.XML'
     usePSCore: False
