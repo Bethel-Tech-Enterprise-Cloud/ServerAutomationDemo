@@ -1,4 +1,9 @@
 trigger:
+- task: Pester@10
+  inputs:
+    scriptFolder: '$(System.DefaultWorkingDirectory)\*'
+    resultsFile: '$(System.DefaultWorkingDirectory)\Test-Pester.XML'
+    usePSCore: False
   branches:
     include:
       - master
